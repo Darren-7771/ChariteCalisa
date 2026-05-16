@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donasi Kampanye - ChariteCalisa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><img src="assets/LogoChariteCalisaTealDark.png" alt="Logo Charite Calisa"></div>
+        <span class="logo-text">Charite<span>Calisa</span></span>
+      </a>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="index.html" class="active">Kampanye</a>
+        <a href="index.html">Tentang Kami</a>
+        <a href="login.html" class="nav-login-btn">Masuk / Daftar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== BREADCRUMB ========== -->
+  <div class="detail-breadcrumb">
+    <a href="index.html">🏠︎ Beranda</a>
+    <span>&rsaquo;</span>
+    <a href="detail.html">Detail Kampanye</a>
+    <span>&rsaquo;</span>
+    <span>Form Donasi</span>
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div class="main-content">
+    <a href="detail.html" class="back-btn">← Kembali ke Detail Kampanye</a>
+
+    <div class="donasi-layout">
+
+      <!-- ====== KOLOM KIRI ====== -->
+      <div class="donasi-left">
+
+        <!-- Summary Card -->
+        <div class="donasi-summary-card">
+          <div class="donasi-summary-img">
+            <img src="assets/BencanaAlamSumatera.jpg" alt="Poster Bantuan Bencana Alam Sumatera">
+          </div>
+          <div class="donasi-summary-body">
+            <span class="tag tag-bencana tag-mb">🚨 Bencana Alam</span>
+            <h3>Bantu Korban Bencana Alam di Sumatera</h3>
+            <div class="summary-meta-list">
+              <div class="donasi-summary-row">
+                <span>Penyelenggara</span>
+                <strong>Badan Amil Zakat Nasional</strong>
+              </div>
+              <div class="donasi-summary-row">
+                <span>Lokasi</span>
+                <strong>Aceh, Sumatera Barat, dan Sumatera Utara</strong>
+              </div>
+              <div class="donasi-summary-row">
+                <span>Batas Waktu</span>
+                <strong class="deadline-danger">10 April 2026</strong>
+              </div>
+            </div>
+            <div class="donasi-mini-progress">
+              <div class="progress-info-row">
+                <span class="progress-info-label">Dana Terkumpul</span>
+                <span class="progress-info-value">78% (Rp 390.000.000)</span>
+              </div>
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill progress-w-78"></div>
+              </div>
+              <div class="progress-target-hint">Target: Rp 500.000.000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metode Pembayaran Info -->
+        <div class="detail-info-block">
+          <h2 class="detail-desc-title">Informasi Rekening Tujuan</h2>
+          <div class="rekening-list">
+            <div class="rekening-item">
+              <div class="rekening-bank">Bank BCA</div>
+              <div class="rekening-no">686 073 7777</div>
+              <div class="rekening-name">a.n. Badan Amil Zakat Nasional</div>
+            </div>
+            <div class="rekening-item">
+              <div class="rekening-bank">BSI</div>
+              <div class="rekening-no">900 005 5740</div>
+              <div class="rekening-name">a.n. Badan Amil Zakat Nasional</div>
+            </div>
+          </div>
+          <p class="rekening-note">
+            Setelah melakukan transfer, lengkapi formulir donasi di sebelah kanan dan unggah bukti transfer Anda. Tim kami akan melakukan konfirmasi dalam 1x24 jam.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- ====== KOLOM KANAN ====== -->
+      <div class="donasi-right">
+        <div class="form-card">
+          <h2>Form Donasi</h2>
+
+          <!-- Nama Lengkap -->
+          <div class="form-group">
+            <label for="nama">Nama Lengkap <span class="required">*</span></label>
+            <input type="text" id="nama" placeholder="Contoh: Doni Silalahi" required>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Alamat Email <span class="required">*</span></label>
+            <input type="email" id="email" placeholder="email@contoh.com" required>
+          </div>
+
+          <!-- Nominal Donasi -->
+          <div class="form-group">
+            <label for="nominal">Nominal Donasi <span class="required">*</span></label>
+            <div class="nominal-presets">
+              <button type="button" class="preset-btn">Rp 10.000</button>
+              <button type="button" class="preset-btn">Rp 25.000</button>
+              <button type="button" class="preset-btn">Rp 50.000</button>
+              <button type="button" class="preset-btn">Rp 100.000</button>
+              <button type="button" class="preset-btn">Rp 250.000</button>
+              <button type="button" class="preset-btn">Rp 500.000</button>
+            </div>
+            <input type="number" id="nominal" placeholder="Masukkan nominal lainnya (Rp)" min="5000" required>
+          </div>
+
+          <!-- Metode Pembayaran -->
+          <div class="form-group">
+            <label for="metode">Metode Pembayaran <span class="required">*</span></label>
+            <select id="metode" required>
+              <option value="">-- Pilih metode pembayaran --</option>
+              <option value="bca">Transfer Bank BCA</option>
+              <option value="mandiri">Transfer Bank Mandiri</option>
+              <option value="bni">Transfer Bank BNI</option>
+              <option value="bri">Transfer Bank BRI</option>
+              <option value="gopay">GoPay</option>
+              <option value="ovo">OVO</option>
+              <option value="dana">DANA</option>
+              <option value="qris">QRIS</option>
+            </select>
+          </div>
+
+          <!-- Pesan Dukungan -->
+          <div class="form-group">
+            <label for="pesan">Pesan Dukungan <span class="optional">(opsional)</span></label>
+            <textarea id="pesan" placeholder="Tulis pesan dukungan untuk penyelenggara dan korban..."></textarea>
+          </div>
+
+          <!-- Bukti Transfer -->
+          <div class="form-group">
+            <label>Bukti Transfer <span class="required">*</span></label>
+            <label for="bukti-transfer">
+              <div class="upload-area" id="upload-area">
+                <div class="upload-icon">📎</div>
+                <div class="upload-text"><strong>Klik untuk unggah</strong> atau seret file ke sini</div>
+                <div class="upload-hint">Format: PDF, JPG, PNG. Maks. ukuran 5 MB</div>
+              </div>
+            </label>
+            <input type="file" id="bukti-transfer" accept=".pdf,.jpg,.jpeg,.png">
+            <div id="file-info" class="file-info"></div>
+          </div>
+
+          <!-- Nomor HP Konfirmasi -->
+          <div class="form-group">
+            <label for="hp">Nomor WhatsApp <span class="required">*</span></label>
+            <input type="tel" id="hp" placeholder="08xx-xxxx-xxxx" required>
+          </div>
+
+          <!-- Submit -->
+          <button type="button" class="btn-submit">
+            💛 Kirim Donasi Sekarang
+          </button>
+
+          <p class="syarat-note">
+            Dengan menekan tombol di atas, Anda menyetujui <a href="#">Syarat &amp; Ketentuan</a> ChariteCalisa.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><img src="assets/LogoChariteCalisaTealDark.png" alt="Logo Charite Calisa"></div>
+          <span class="logo-text">Charite<span>Calisa</span></span>
+        </a>
+        <p class="footer-brand-desc">Platform crowdfunding sosial terpercaya untuk Indonesia. Setiap rupiah memberi dampak nyata bagi yang membutuhkan.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kampanye</h4>
+        <ul>
+          <li><a href="index.html">Bencana Alam</a></li>
+          <li><a href="index.html">Pendidikan</a></li>
+          <li><a href="index.html">Kesehatan</a></li>
+          <li><a href="index.html">Lingkungan</a></li>
+          <li><a href="index.html">Fasilitas Umum</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#">Cara Berdonasi</a></li>
+          <li><a href="#">Buat Kampanye</a></li>
+          <li><a href="#">Transparansi Dana</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Tim Kami</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ChariteCalisa. Semua hak dilindungi.</span>
+      <span>Terdaftar & diawasi oleh Kemensos RI</span>
+    </div>
+  </footer>
+
+</body>
+</html>
