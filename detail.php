@@ -267,7 +267,7 @@ $rata_rata       = (float)($stat['rata_rata'] ?? 0);
             </strong>
           </p>
 
-          <a href="donasi.html" class="btn-donasi-now">💛 Donasi Sekarang</a>
+          <a href="donasi.php?id=<?= $id ?>" class="btn-donasi-now">💛 Donasi Sekarang</a>
         </div>
 
         <!-- Statistik Donasi -->
